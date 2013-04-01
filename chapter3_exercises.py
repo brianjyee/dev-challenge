@@ -4,14 +4,32 @@
 
 # 3.1
 # NameError: name 'repeat_lyrics' is not defined
+repeat_lyrics()
+
+def print_lyrics():
+    print "I'm a lumberjack, and I'm okay."
+    print "I sleep all night and I work all day."
+    
+def repeat_lyrics():
+    print_lyrics()
+    print_lyrics()
 
 # 3.2
-# Works fine. Prints the following:
+# Works fine because both functions have been defined. Prints the following:
 # I'm a lumberjack, and I'm okay.
 # I sleep all night and I work all day.
 # I'm a lumberjack, and I'm okay.
 # I sleep all night and I work all day.
-
+def repeat_lyrics():
+    print_lyrics()
+    print_lyrics()
+    
+def print_lyrics():
+    print "I'm a lumberjack, and I'm okay."
+    print "I sleep all night and I work all day."
+    
+repeat_lyrics()
+    
 # 3.3
 def right_justify(s):
     print ' ' * (70 - len(s)) + s
