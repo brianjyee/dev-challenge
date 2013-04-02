@@ -31,3 +31,14 @@ print (4.0 / 3.0) * 3.14159 * (5 ** 3)
 # 2. $62.22
 print (24.95 * .6) + 3 + (.75 * 59)
 # 3. 7:30:06 am
+minute = 60
+hour = minute * 60
+startTime = (6 * hour) + (52 * minute)
+easy = (8 * minute) + 15
+tempo = (7 * minute) + 12
+runTime = (2 * easy) + (3 * tempo)
+finishTime = startTime + runTime
+finishHour = finishTime / 60 / 60
+finishMinute = (finishTime / 60) % 60
+finishSecond = (finishTime % 60) % 60
+print str(finishHour) + ':' + str(finishMinute) + ':' + str(finishSecond)
